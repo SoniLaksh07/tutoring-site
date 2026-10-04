@@ -3,52 +3,65 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YOUR_NAME Tutoring | Math, Science and Python for Grades K-12</title>
-<meta name="description" content="Online tutoring in math (K-12), science (K-10) and Python for elementary, middle and high school students. Book a session online.">
+<title>Laksh Tutoring | Math, Science and Python for Grades K-12</title>
+<meta name="description" content="Online one-on-one tutoring in math (K-12), science (K-10) and Python for elementary, middle and high school students. Starting at $20/hour. Book a session online.">
+<meta property="og:title" content="Laksh Tutoring | Math, Science and Python">
+<meta property="og:description" content="Online one-on-one tutoring for elementary, middle and high school students. Starting at $20/hour.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#285293">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23285293'/%3E%3Cpath d='M18 82L82 18' stroke='%23FFD23F' stroke-width='10' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#F3F7FB; --ink:#14213D; --grid:#D3E0EE; --marker:#FFD23F; --green:#1B7F5C; --muted:#44536E;
+  --paper:#F3F7FB; --ink:#14213D; --blue:#285293; --grid:#D3E0EE; --marker:#FFD23F; --green:#1B7F5C; --muted:#44536E;
   --head:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
   --body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
 body{margin:0;font-family:var(--body);font-size:1.125rem;line-height:1.6;color:var(--ink);background:var(--paper)}
-a{color:var(--ink)}
+a{color:var(--blue)}
 :focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.6rem 1rem;z-index:20}
+.skip:focus{left:0}
 .wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
 h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0 0 .75rem}
-h1{font-size:clamp(2.4rem,6vw,4.25rem);font-weight:800;max-width:15ch}
-h2{font-size:clamp(1.6rem,3.5vw,2.25rem);font-weight:800}
+h1{font-size:clamp(2.4rem,6vw,4.25rem);font-weight:800;max-width:14ch}
+h2{font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:800}
 h3{font-size:1.3rem;font-weight:600}
 p{margin:0 0 1rem;max-width:62ch}
 
-header.top{padding:1rem 0}
-header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem}
-.brand{font-family:var(--head);font-weight:800;font-size:1.2rem;text-decoration:none}
-nav a{margin-left:1.25rem;text-decoration:none;font-weight:700}
+header.top{position:sticky;top:0;z-index:10;background:rgba(243,247,251,.95);backdrop-filter:blur(6px);border-bottom:2px solid var(--ink)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:.8rem;padding-bottom:.8rem}
+.brand{font-family:var(--head);font-weight:800;font-size:1.25rem;text-decoration:none;color:var(--ink)}
+nav{display:flex;align-items:center;gap:1.25rem}
+nav a{text-decoration:none;font-weight:700;color:var(--ink)}
 nav a:hover{text-decoration:underline}
+nav a.pill{background:var(--blue);color:#fff;padding:.45rem 1rem;border-radius:6px}
+nav a.pill:hover{background:var(--ink);text-decoration:none}
 
 .hero{
-  background-image:
-    linear-gradient(var(--grid) 1px,transparent 1px),
-    linear-gradient(90deg,var(--grid) 1px,transparent 1px);
-  background-size:32px 32px;
-  border-bottom:2px solid var(--ink);
-  padding:3.5rem 0 4rem;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:32px 32px;border-bottom:2px solid var(--ink);padding:3.5rem 0 4rem;
 }
-.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
-.hero p.lead{font-size:1.3rem;background:var(--paper);display:inline;padding:.1rem .3rem;box-decoration-break:clone;-webkit-box-decoration-break:clone}
-.btn{display:inline-block;margin-top:1.5rem;padding:.9rem 1.5rem;background:var(--ink);color:#fff;font-weight:700;text-decoration:none;border-radius:6px;border:2px solid var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center}
+.lead{font-size:1.3rem;background:var(--paper);display:inline;padding:.1rem .3rem;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin-top:1.5rem}
+.btn{display:inline-block;padding:.9rem 1.5rem;background:var(--blue);color:#fff;font-weight:700;text-decoration:none;border-radius:6px;border:2px solid var(--ink)}
 .btn:hover{background:var(--marker);color:var(--ink)}
-.plane{width:100%;height:auto;background:var(--paper);border:2px solid var(--ink);border-radius:8px}
+.price-note{background:var(--paper);padding:.2rem .5rem;font-weight:700}
+
+.demo{background:var(--paper);border:2px solid var(--ink);border-radius:8px;padding:1rem}
+.demo svg{display:block;width:100%;height:auto}
+.demo label{display:block;font-weight:700;margin-top:.75rem}
+.demo input[type=range]{width:100%;accent-color:var(--blue)}
+.eq{font-family:var(--head);font-weight:800;font-size:1.6rem;margin:.25rem 0 0}
 
 section{padding:3.5rem 0}
 .subjects{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
-.subjects div{border-top:4px solid var(--ink);padding-top:1rem}
+.subjects div{border-top:4px solid var(--blue);padding-top:1rem}
 .subjects div:nth-child(2){border-color:var(--green)}
 .subjects div:nth-child(3){border-color:var(--marker)}
 .grades{font-weight:700;color:var(--muted);margin-bottom:.5rem}
@@ -58,46 +71,63 @@ section{padding:3.5rem 0}
 .steps li{counter-increment:s}
 .steps li::before{content:counter(s);display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--marker);font-family:var(--head);font-weight:800;margin-bottom:.75rem}
 
-.rate{font-family:var(--head);font-size:3rem;font-weight:800;line-height:1}
+.rate{font-family:var(--head);font-size:3rem;font-weight:800;line-height:1;margin-bottom:.5rem}
 .rate small{font-size:1.1rem;font-weight:600;color:var(--muted)}
 
-#book .calendly-inline-widget{min-width:320px;height:720px;background:#fff;border:2px solid var(--ink);border-radius:8px}
+details{border-bottom:1px solid var(--grid);padding:.9rem 0;max-width:46rem}
+summary{cursor:pointer;font-weight:700;font-family:var(--head);font-size:1.15rem}
+details p{margin:.6rem 0 0}
+
+.calendly-inline-widget{min-width:320px;height:700px;background:#fff;border:2px solid var(--ink);border-radius:8px}
 footer{padding:2rem 0;border-top:2px solid var(--ink);color:var(--muted);font-size:1rem}
 
-@media (max-width:760px){
+@media (max-width:820px){
   .hero .wrap,.subjects,.steps{grid-template-columns:1fr}
-  nav a{margin-left:.9rem}
-  .plane{max-width:20rem}
+  nav a:not(.pill){display:none}
 }
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#">YOUR_NAME Tutoring</a>
-    <nav aria-label="Main"><a href="#subjects">Subjects</a><a href="#pricing">Pricing</a><a href="#book">Book</a></nav>
+    <a class="brand" href="#top">Laksh Tutoring</a>
+    <nav aria-label="Main">
+      <a href="#subjects">Subjects</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a class="pill" href="#book">Book a session</a>
+    </nav>
   </div>
 </header>
 
-<main>
-<div class="hero">
+<main id="main">
+<div class="hero" id="top">
   <div class="wrap">
     <div>
       <h1>Math, science and Python, one clear step at a time.</h1>
       <p><span class="lead">One-on-one online tutoring for elementary, middle and high school students.</span></p>
-      <a class="btn" href="#book">Book a session</a>
+      <div class="cta">
+        <a class="btn" href="#book">Book a session</a>
+        <span class="price-note">Starting at $20/hour</span>
+      </div>
     </div>
-    <svg class="plane" viewBox="0 0 240 240" role="img" aria-label="A line plotted on a graph with three marked points">
-      <g stroke="#D3E0EE" stroke-width="1">
-        <path d="M0 40H240M0 80H240M0 120H240M0 160H240M0 200H240M40 0V240M80 0V240M120 0V240M160 0V240M200 0V240"/>
-      </g>
-      <path d="M120 0V240M0 120H240" stroke="#14213D" stroke-width="2"/>
-      <path d="M20 220L220 20" stroke="#1B7F5C" stroke-width="4" stroke-linecap="round"/>
-      <g fill="#FFD23F" stroke="#14213D" stroke-width="2.5">
-        <circle cx="40" cy="200" r="8"/><circle cx="120" cy="120" r="8"/><circle cx="200" cy="40" r="8"/>
-      </g>
-    </svg>
+    <div class="demo">
+      <svg id="plane" viewBox="0 0 240 240" role="img" aria-label="A line on a graph that changes with the slider below">
+        <g stroke="#D3E0EE" stroke-width="1">
+          <path d="M0 20H240M0 40H240M0 60H240M0 80H240M0 100H240M0 140H240M0 160H240M0 180H240M0 200H240M0 220H240M20 0V240M40 0V240M60 0V240M80 0V240M100 0V240M140 0V240M160 0V240M180 0V240M200 0V240M220 0V240"/>
+        </g>
+        <path d="M120 0V240M0 120H240" stroke="#14213D" stroke-width="2"/>
+        <line id="ln" x1="0" y1="0" x2="240" y2="240" stroke="#285293" stroke-width="4" stroke-linecap="round"/>
+        <g fill="#FFD23F" stroke="#14213D" stroke-width="2.5">
+          <circle id="p0" r="7"/><circle id="p1" r="7"/><circle id="p2" r="7"/>
+        </g>
+      </svg>
+      <p class="eq" id="eq" aria-live="polite">y = 1x + 1</p>
+      <label for="slope">Try it: drag to change the slope</label>
+      <input id="slope" type="range" min="-3" max="3" step="0.5" value="1">
+    </div>
   </div>
 </div>
 
@@ -108,12 +138,12 @@ footer{padding:2rem 0;border-top:2px solid var(--ink);color:var(--muted);font-si
       <div>
         <h3>Math</h3>
         <p class="grades">Grades K to 12</p>
-        <p>From number sense and fractions to algebra, functions and calculus prep. We build the basics first so harder topics make sense.</p>
+        <p>From number sense and fractions to algebra and functions. We build the basics first so harder topics make sense.</p>
       </div>
       <div>
         <h3>Python</h3>
         <p class="grades">Beginners to confident coders</p>
-        <p>Learn to write real programs: variables, loops, functions and small projects like games and calculators.</p>
+        <p>Learn to write real programs with variables, loops and functions, and finish small projects like games and calculators.</p>
       </div>
       <div>
         <h3>Science</h3>
@@ -128,8 +158,8 @@ footer{padding:2rem 0;border-top:2px solid var(--ink);color:var(--muted);font-si
   <div class="wrap">
     <h2>How sessions work</h2>
     <ol class="steps">
-      <li><h3>Pick a time</h3><p>Choose a slot that fits your schedule using the booking calendar below.</p></li>
-      <li><h3>Meet online</h3><p>You get a video link by email. All you need is a computer or tablet and a pen and paper.</p></li>
+      <li><h3>Pick a time</h3><p>Choose a slot that fits your schedule in the booking calendar below.</p></li>
+      <li><h3>Meet online</h3><p>You get a video link after booking. All you need is a computer or tablet, internet, and pen and paper.</p></li>
       <li><h3>Practice and progress</h3><p>We work through your child's questions together, and I suggest a few practice problems for between sessions.</p></li>
     </ol>
   </div>
@@ -138,31 +168,67 @@ footer{padding:2rem 0;border-top:2px solid var(--ink);color:var(--muted);font-si
 <section id="pricing">
   <div class="wrap">
     <h2>Pricing</h2>
-    <p class="rate">$YOUR_RATE <small>per hour</small></p>
-    <p>Payment details are shared when you book. Questions about packages or sibling sessions? Get in touch at <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a>.</p>
+    <p class="rate">$20 <small>per hour, starting rate</small></p>
+    <p>Some sessions may have extra fees. If you would like a quote before booking, email <a href="mailto:Lakshsoni07@hotmail.com">Lakshsoni07@hotmail.com</a>.</p>
   </div>
 </section>
 
 <section class="band" id="about">
   <div class="wrap">
     <h2>About me</h2>
-    <p>Hi, I'm YOUR_NAME. I'm an engineering student at Simon Fraser University and I teach coding and robotics to kids, so I'm used to explaining tricky ideas in simple ways. I'll meet your child where they are and keep sessions friendly and focused.</p>
+    <p>Hi, I'm Laksh. I'm an electrical engineering student at Simon Fraser University and I teach coding and robotics to kids, so I'm used to explaining tricky ideas in simple ways. I'll meet your child where they are and keep sessions friendly and focused.</p>
   </div>
 </section>
 
-<section id="book">
+<section id="faq">
+  <div class="wrap">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Which grades do you tutor?</summary>
+      <p>Math from kindergarten to grade 12, science from kindergarten to grade 10, and Python for beginners and up.</p>
+    </details>
+    <details>
+      <summary>What do we need for a session?</summary>
+      <p>A computer or tablet with internet, a way to join a video call, and pen and paper. Bring any homework or questions your child is stuck on.</p>
+    </details>
+    <details>
+      <summary>Why might there be extra fees?</summary>
+      <p>The starting rate is $20 per hour and some sessions may cost more. Email me before booking and I'll give you a clear quote.</p>
+    </details>
+  </div>
+</section>
+
+<section class="band" id="book">
   <div class="wrap">
     <h2>Book a session</h2>
-    <p>Pick a time that works for you. If the calendar does not load, <a href="CALENDLY_LINK">open it in a new tab</a>.</p>
-    <div class="calendly-inline-widget" data-url="CALENDLY_LINK"></div>
+    <p>Pick a time that works for you. If the calendar does not load, <a href="https://calendly.com/lakshsoni07/tutoring-session">open it in a new page</a>.</p>
+    <!-- Calendly inline widget begin -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/lakshsoni07/tutoring-session?primary_color=285293"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- Calendly inline widget end -->
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap">YOUR_NAME Tutoring &middot; Online sessions &middot; <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></div>
+  <div class="wrap">&copy; 2026 Laksh Tutoring &middot; Online sessions &middot; <a href="mailto:Lakshsoni07@hotmail.com">Lakshsoni07@hotmail.com</a></div>
 </footer>
 
-<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script>
+(function(){
+  var s=document.getElementById('slope'),ln=document.getElementById('ln'),eq=document.getElementById('eq');
+  var pts=[document.getElementById('p0'),document.getElementById('p1'),document.getElementById('p2')],xs=[-2,0,2];
+  function X(x){return 120+20*x}
+  function Y(y){return 120-20*y}
+  function draw(){
+    var m=parseFloat(s.value);
+    ln.setAttribute('x1',X(-6));ln.setAttribute('y1',Y(-6*m+1));
+    ln.setAttribute('x2',X(6));ln.setAttribute('y2',Y(6*m+1));
+    for(var i=0;i<3;i++){pts[i].setAttribute('cx',X(xs[i]));pts[i].setAttribute('cy',Y(m*xs[i]+1))}
+    eq.textContent='y = '+m+'x + 1';
+  }
+  s.addEventListener('input',draw);draw();
+})();
+</script>
 </body>
 </html>
