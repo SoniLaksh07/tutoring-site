@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOUR_NAME Tutoring | Math, Science and Python for Grades K-12</title>
+<meta name="description" content="Online tutoring in math (K-12), science (K-10) and Python for elementary, middle and high school students. Book a session online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3F7FB; --ink:#14213D; --grid:#D3E0EE; --marker:#FFD23F; --green:#1B7F5C; --muted:#44536E;
+  --head:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-size:1.125rem;line-height:1.6;color:var(--ink);background:var(--paper)}
+a{color:var(--ink)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0 0 .75rem}
+h1{font-size:clamp(2.4rem,6vw,4.25rem);font-weight:800;max-width:15ch}
+h2{font-size:clamp(1.6rem,3.5vw,2.25rem);font-weight:800}
+h3{font-size:1.3rem;font-weight:600}
+p{margin:0 0 1rem;max-width:62ch}
+
+header.top{padding:1rem 0}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.brand{font-family:var(--head);font-weight:800;font-size:1.2rem;text-decoration:none}
+nav a{margin-left:1.25rem;text-decoration:none;font-weight:700}
+nav a:hover{text-decoration:underline}
+
+.hero{
+  background-image:
+    linear-gradient(var(--grid) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:32px 32px;
+  border-bottom:2px solid var(--ink);
+  padding:3.5rem 0 4rem;
+}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+.hero p.lead{font-size:1.3rem;background:var(--paper);display:inline;padding:.1rem .3rem;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.btn{display:inline-block;margin-top:1.5rem;padding:.9rem 1.5rem;background:var(--ink);color:#fff;font-weight:700;text-decoration:none;border-radius:6px;border:2px solid var(--ink)}
+.btn:hover{background:var(--marker);color:var(--ink)}
+.plane{width:100%;height:auto;background:var(--paper);border:2px solid var(--ink);border-radius:8px}
+
+section{padding:3.5rem 0}
+.subjects{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.subjects div{border-top:4px solid var(--ink);padding-top:1rem}
+.subjects div:nth-child(2){border-color:var(--green)}
+.subjects div:nth-child(3){border-color:var(--marker)}
+.grades{font-weight:700;color:var(--muted);margin-bottom:.5rem}
+
+.band{background:#fff;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;counter-reset:s;padding:0;list-style:none;margin:0}
+.steps li{counter-increment:s}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--marker);font-family:var(--head);font-weight:800;margin-bottom:.75rem}
+
+.rate{font-family:var(--head);font-size:3rem;font-weight:800;line-height:1}
+.rate small{font-size:1.1rem;font-weight:600;color:var(--muted)}
+
+#book .calendly-inline-widget{min-width:320px;height:720px;background:#fff;border:2px solid var(--ink);border-radius:8px}
+footer{padding:2rem 0;border-top:2px solid var(--ink);color:var(--muted);font-size:1rem}
+
+@media (max-width:760px){
+  .hero .wrap,.subjects,.steps{grid-template-columns:1fr}
+  nav a{margin-left:.9rem}
+  .plane{max-width:20rem}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">YOUR_NAME Tutoring</a>
+    <nav aria-label="Main"><a href="#subjects">Subjects</a><a href="#pricing">Pricing</a><a href="#book">Book</a></nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Math, science and Python, one clear step at a time.</h1>
+      <p><span class="lead">One-on-one online tutoring for elementary, middle and high school students.</span></p>
+      <a class="btn" href="#book">Book a session</a>
+    </div>
+    <svg class="plane" viewBox="0 0 240 240" role="img" aria-label="A line plotted on a graph with three marked points">
+      <g stroke="#D3E0EE" stroke-width="1">
+        <path d="M0 40H240M0 80H240M0 120H240M0 160H240M0 200H240M40 0V240M80 0V240M120 0V240M160 0V240M200 0V240"/>
+      </g>
+      <path d="M120 0V240M0 120H240" stroke="#14213D" stroke-width="2"/>
+      <path d="M20 220L220 20" stroke="#1B7F5C" stroke-width="4" stroke-linecap="round"/>
+      <g fill="#FFD23F" stroke="#14213D" stroke-width="2.5">
+        <circle cx="40" cy="200" r="8"/><circle cx="120" cy="120" r="8"/><circle cx="200" cy="40" r="8"/>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<section id="subjects">
+  <div class="wrap">
+    <h2>What I teach</h2>
+    <div class="subjects">
+      <div>
+        <h3>Math</h3>
+        <p class="grades">Grades K to 12</p>
+        <p>From number sense and fractions to algebra, functions and calculus prep. We build the basics first so harder topics make sense.</p>
+      </div>
+      <div>
+        <h3>Python</h3>
+        <p class="grades">Beginners to confident coders</p>
+        <p>Learn to write real programs: variables, loops, functions and small projects like games and calculators.</p>
+      </div>
+      <div>
+        <h3>Science</h3>
+        <p class="grades">Grades K to 10</p>
+        <p>Clear explanations and worked examples for school science, plus help getting ready for tests and labs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="how">
+  <div class="wrap">
+    <h2>How sessions work</h2>
+    <ol class="steps">
+      <li><h3>Pick a time</h3><p>Choose a slot that fits your schedule using the booking calendar below.</p></li>
+      <li><h3>Meet online</h3><p>You get a video link by email. All you need is a computer or tablet and a pen and paper.</p></li>
+      <li><h3>Practice and progress</h3><p>We work through your child's questions together, and I suggest a few practice problems for between sessions.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <h2>Pricing</h2>
+    <p class="rate">$YOUR_RATE <small>per hour</small></p>
+    <p>Payment details are shared when you book. Questions about packages or sibling sessions? Get in touch at <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a>.</p>
+  </div>
+</section>
+
+<section class="band" id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <p>Hi, I'm YOUR_NAME. I'm an engineering student at Simon Fraser University and I teach coding and robotics to kids, so I'm used to explaining tricky ideas in simple ways. I'll meet your child where they are and keep sessions friendly and focused.</p>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <h2>Book a session</h2>
+    <p>Pick a time that works for you. If the calendar does not load, <a href="CALENDLY_LINK">open it in a new tab</a>.</p>
+    <div class="calendly-inline-widget" data-url="CALENDLY_LINK"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">YOUR_NAME Tutoring &middot; Online sessions &middot; <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></div>
+</footer>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
